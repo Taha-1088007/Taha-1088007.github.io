@@ -1,0 +1,129 @@
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    max-width: 800px;
+    line-height: 1.6;
+    font-family: system-ui, -apple-system, sans-serif;
+    margin:0 auto;
+    padding: 2rem 1rem
+}
+
+header{
+    margin-bottom: 2.5rem;
+}
+
+header p {
+    color: #9CA3AF
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section h2{
+    color: #6049ea;
+    font-size: 1.4rem;
+}
+
+section p{
+    color: #9CA3AF;
+}
+
+section{
+    background-color: #111111;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.tech-grid{
+    list-style: none;
+    padding: 1.5rem;
+    margin: 1rem 0 0 ;
+    display: flex;
+    gap: 2rem;
+    background-color: #0a0a0a;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+.tech-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tech-item img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.tech-item span{
+    font-size: 0.8rem;
+    color: #9CA3AF
+}
+
+footer {
+    padding: 12px;
+    display:flex;
+    gap: 1rem;
+    justify-content: right;
+
+}
+
+.card{
+    position: relative;
+}
+
+.card:hover{
+    top: -5px;
+    transition: 3s;
+}
+
+.card-1{
+    background-color: #111111;
+    border: 1rem;
+    display: grid;
+    padding: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    position: relative;
+}
+
+.card-1:hover{
+    top:-5px;
+    transition: 3s;
+}
+
+.pop-up{
+    background-color: #0a0a0a;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    position: relative;
+}
+
+.pop-up:hover{
+    transition: 1s;
+    top: -5px;
+}
+
+button{
+    background-color: #6049ea;
+    border-radius: 0.2rem;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, sans-serif;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.4rem 0.8rem;
+    width: fit-content;
+    margin-top: auto;
+
+
+}
+
+.card-1 h3{
+    grid-column: 1/-1;
+    margin: 0;
+}
