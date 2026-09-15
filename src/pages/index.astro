@@ -1,11 +1,11 @@
 ---
-
+import '../base.css'
 ---
 
 <html lang="nl">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="/src/base.css"/>
+		<!--<link rel="stylesheet" href="/src/base.css"/>-->
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Taha Ditta | Portfolio </title>
@@ -64,32 +64,71 @@
             </section>
 
             <section class="card-1">
-            <h3>Ervaringen</h3>
+            <h3>Mijn Projecten</h3>
                 <section class="pop-up">
                     <h4>Pygame</h4>
-                    <p>Een 2D top-down survivalgame waarin je het opneemt tegen eindeloze
-                        vijanden.</p>
-                    <button>Lees meer</button>
+                    <p>Een 2D top-down survivalgame waarin je het opneemt tegen eindeloze vijanden.</p>
+                    <button class="button_open">Lees meer</button>
+
+                    <article class="project-info">
+                        <button class="button_close">X</button>
+                        <h3>Gameproject: StayAlive</h3>
+                        <p>
+                            Gebouwd in Python met Pygame, met een sterke focus op besturing en een soepele game-loop.
+                            Verschillende mechanieken ontwikkeld waaronder vijandelijke waves, een levens- en
+                            gezondheidsystemen en het bijhouden van high-scores</p>
+                        <img src="public/assets/stayalive.jpg" alt="stayalive">
+                    </article>
                 </section>
 
                 <section class="pop-up">
-                    <h4>Accessibilty</h4>
-                    <p>Een webapplicatie die ervaringsdeskundigen verbindt met organisaties
-                        voor toegankelijkheidsonderzoek.</p>
-                    <button>Lees meer</button>
+                    <h4>Accessibilty Hub</h4>
+                    <p>Platform dat deskundigen verbindt met organisaties voor toegankelijkheids onderzoek.</p>
+                    <button class="button_open">Lees meer</button>
+
+                     <article class="project-info">
+                        <button class="button_close">X</button>
+                        <h3>Accessibility Hub</h3>
+                        <p>
+                            Ontwikkeld met Flask, Jinja2 en SQLite volgens het MVC-patroon.
+                            Rolgebaseerde functies ontworpen voor experts, admins en organistaties.
+                            Gebruik gemaakt van POST/REDIRECT/GET.
+                            Alle interfaces ontworpen volgens WCAG 2.1 AA</p>
+                          <img src="public/assets/hub.jpg" alt="hub">
+                    </article>
                 </section>
 
                     <section class="pop-up">
                     <h4>Test-Correct</h4>
                     <p>een onderwijsplatform dat resultaten omzet in heldere voortgangsrapporten
                         voor leerlingen en docenten</p>
-                    <button>Lees meer</button>
+                    <button class="button_open">Lees meer</button>
+
+                     <article class="project-info">
+                        <button class="button_close">X</button>
+                        <h3>Test-Correct</h3>
+                        <p>
+                            Studentenbegrip gevisualiseerd en gekoppeld aan specifieke leerdoelen.
+                            Persoonlijke groei voor studenten gebouwd, naast uitgebreide klassenanalytics voor docenten.
+                            Ontworpen in asychrone AJAX.</p>
+                         <img src="/public/assets/test_correct.jpg" alt="test-correct">
+                    </article>
                 </section>
 
                 <section class="pop-up">
-                    <h4>PWA</h4>
+                    <h4>Web-app PWA</h4>
                     <p>Een web-app waarmee studenten eenvoudig afstudeerstages kunnen bewaren en solliciteren.</p>
-                    <button>Lees meer</button>
+                    <button class="button_open">Lees meer</button>
+
+                    <article class="project-info">
+                        <button class="button_close">X</button>
+                        <h3>Web-app PWA</h3>
+                        <p>
+                            Een installeerbare progressive Web App (PWA) Ontwikkeld met vite waarmee studenten eenvoudig
+                            afstudeerstages kunnen vinden, opslaan en erop kunnen solliciteren.
+                            Volledig offlineondersteuning direct toe te voegen op je startscherm zonder app store.</p>
+                        <img src="public/assets/pwa.jpg" alt="pwa">
+                    </article>
                 </section>
             </section>
         </main>
@@ -103,5 +142,6 @@
                 <img src="/public/assets/github.svg" width="24" height="24" alt="github-logo">
             </a>
         </footer>
+    <script src="../script.js"></script>
 	</body>
 </html>

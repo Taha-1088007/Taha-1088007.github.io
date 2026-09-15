@@ -100,16 +100,10 @@ footer {
 .pop-up{
     background-color: #0a0a0a;
     padding: 1rem;
-    border-radius: 0.75rem;
-    position: relative;
+    justify-content: space-between;
 }
 
-.pop-up:hover{
-    transition: 1s;
-    top: -5px;
-}
-
-button{
+.button_open{
     background-color: #6049ea;
     border-radius: 0.2rem;
     font-size: 13px;
@@ -119,11 +113,57 @@ button{
     padding: 0.4rem 0.8rem;
     width: fit-content;
     margin-top: auto;
-
-
+    cursor: pointer;
+    flex-direction: column;
 }
 
+.button_close{
+    background-color: #6049ea;
+    border-radius: 0.2rem;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, sans-serif;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.4rem 0.8rem;
+    width: fit-content;
+    margin-top: auto;
+    cursor: pointer;
+    float:right;
+}
+
+
+.button.open{
+
+}
 .card-1 h3{
     grid-column: 1/-1;
     margin: 0;
+}
+
+.project-info{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #111111;
+    color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 20px;
+   }
+
+.project-info.active{
+    display: block;
+   }
+
+.no_scroll{
+    overflow: hidden;
+}
+
+.project-info img{
+    width:100%;
+    max-width:800px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
 }
