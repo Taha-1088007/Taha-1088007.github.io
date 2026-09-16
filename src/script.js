@@ -7,7 +7,7 @@ openButton.forEach((openButton) => {
         const projectInfo = openButton.nextElementSibling;
 
         projectInfo.classList.add("active");
-        document.body.classList.add("no-scroll");
+        document.body.classList.add("no_scroll");
     });
 });
 
@@ -16,6 +16,6 @@ closeButton.forEach((closeButton) => {
         const projectInfo = closeButton.parentElement;
 
         projectInfo.classList.remove("active");
-        document.body.classList.remove("no-scroll");
+        document.body.classList.remove("no_scroll");
     });
 });
